@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/userRoutes');
 const courseRoutes = require('./routes/courseRoutes');
-
+const cors = require('cors');
 const app = express();
 const PORT =  3000;
 
@@ -15,10 +15,11 @@ mongoose.connect('mongodb+srv://kientruc:1OuXFqIHzj25rBWR@cluster0.ebderwa.mongo
 }).catch((error) => {
   console.error('Error connecting to MongoDB:', error);
 });
+app.use(cors({ origin: 'http://localhost:3001' }));
+
 app.use(express.json());
 app.use('/users', userRoutes);
 app.use('/courses',courseRoutes);
-
 app.use((req, res, next) => {
   res.status(404).json({ message: 'Route not found' });
 });
