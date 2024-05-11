@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  input, button {
+    margin: 5px;
+  }
+  
