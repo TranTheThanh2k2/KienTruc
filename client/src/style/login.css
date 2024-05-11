@@ -1,19 +1,89 @@
-body{
+body {
   margin-top: 0;
   padding:0 ;
   font-family: 'Times New Roman', Times, serif;
 }
-.login-container {
-  margin-top: 30px;
-  float: right;
-  font-size: 30px;
-}
-br{
-  left: 20px;
-}
-form{
-  align-items: center;
-  justify-content: center;
+.body2 {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  
+}
+
+
+h2 {
+  margin-left: 113px;
+  font-size: 20px;
+  color:#395AC5;
+}
+h3{
+  margin-left: 142px;
+  color: #395AC5;
+}
+
+text{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 190px;
+  color: #395AC5;
+}
+form {
+  display:flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding-bottom: 10px;
 
 }
+.modal-login{
+  width: 500px;
+  height: 600px;
+  background-color: #A5F67F;
+  border-radius: 5px;
+  margin-top: 70px;
+  margin-right: 75px;
+  
+}
+.login-container{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  
+}
+
+
+.form-imput input {
+  color: #CCCD21;
+  height: 40px;
+  width: 400px;
+  margin-top: -40px;
+  margin-left: 74px;
+  border-radius: 10px;
+  background-color: #ECECEC;
+  
+}
+.form-imput button{
+  margin-left: 135px;
+  height: 40px;
+  width: 200px;
+  top: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+
+
+}
+.title-header{
+  width: 800px; 
+}
+.footer{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #A5F67F;
+}
+
+
+
+

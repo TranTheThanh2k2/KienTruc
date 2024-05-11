@@ -15,6 +15,7 @@ mongoose.connect('mongodb+srv://kientruc:1OuXFqIHzj25rBWR@cluster0.ebderwa.mongo
 }).catch((error) => {
   console.error('Error connecting to MongoDB:', error);
 });
+
 app.use(cors({ origin: 'http://localhost:3001' }));
 
 app.use(express.json());
